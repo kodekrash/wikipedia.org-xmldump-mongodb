@@ -11,7 +11,7 @@
 
 $dsname = 'mongodb://localhost/wp20130708';
 $file = 'enwiki-20130708-pages-articles.xml.bz2';
-$log = './';
+$logpath = './';
 
 /*************************************************************************/
 
@@ -25,7 +25,7 @@ if( !is_file( $file ) || !is_readable( $file ) ) {
 	abort( 'Data file is missing or not readable.' );
 }
 
-if( !is_dir( $log ) || !is_writable( $log ) ) {
+if( !is_dir( $logpath ) || !is_writable( $logpath ) ) {
 	abort( 'Log path is missing or not writable.' );
 }
 
@@ -34,7 +34,7 @@ if( !$in ) {
 	abort( 'Unable to open input file.' );
 }
 
-$out = fopen( rtrim( $log, '/' ) . '/wikipedia.org_xmldump-' . date( 'YmdH' ) . '.log', 'w' );
+$out = fopen( rtrim( $logpath, '/' ) . '/wikipedia.org_xmldump-' . date( 'YmdH' ) . '.log', 'w' );
 if( !$out ) {
 	abort( 'Unable to open log file.' );
 }

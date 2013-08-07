@@ -37,7 +37,7 @@ Howto
 
         $dsname = 'mongodb://localhost/wp20130708';
         $file = 'enwiki-20130708-pages-articles.xml.bz2';
-        $log = './';
+        $logpath = './';
 
 * Run the script -- this may take several hours.
 
