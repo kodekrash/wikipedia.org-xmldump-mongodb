@@ -4,7 +4,7 @@ wikipedia.org-xmldump-mongodb
 Overview
 --------
 
-Wikipedia.org XML Dump Importer is a script to import the standard Wikipedia XML dump into a simple MySQL database structure, useful as a local cache for searching and manipulating Wikipedia articles. The database structure is designed for ease of use, and is not mediawiki-compatible.
+Wikipedia.org XML Dump Importer is a script to import the standard Wikipedia XML dump into a simple MongoDB data structure, useful as a local cache for searching and manipulating Wikipedia articles. The datastore structure is designed for ease of use, and is not mediawiki-compatible.
 
 Dataset Source
 --------------
