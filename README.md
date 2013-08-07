@@ -16,15 +16,16 @@ Updates: monthly
 Environment
 -----------
 
-GNU/Linux
-PHP 5.4 + (with mbstring, simplexml, mongodb extensions)
-MongoDB 2.2 +
+* GNU/Linux
+* PHP 5.4 + (with mbstring, simplexml, mongodb extensions)
+* MongoDB 2.2 +
 
 Notes
 -----
 
 * This script is designed to run on the command line - not a web browser
-* enwiki download is approximately 9.5GB compressed and will require another (approx.) 45GB of storage for the database - a total of approximately 55GB
+* enwiki download is approximately 9.5GB compressed and will require another (approx.) 45GB of storage for the database - a total of approximately 55GB.
+* This script reads the compressed file.
 * Import process required approximately 4 hours on a well configured quad core with 4GB of memory. 
 
 Howto
@@ -32,7 +33,7 @@ Howto
 
 * Download the proper pages-articles XML file - for example, enwiki-20130708-pages-articles.xml.bz2.
 * Download the script.
-* Edit the three configuration variables at the beginning of the script:
+* Edit the three configuration variables at the beginning of the script depending on which file you download, and where you want the log file to be placed:
 
         $dsname = 'mongodb://localhost/wp20130708';
         $file = 'enwiki-20130708-pages-articles.xml.bz2';
