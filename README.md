@@ -33,9 +33,11 @@ Howto
 * Download the proper pages-articles XML file - for example, enwiki-20130708-pages-articles.xml.bz2.
 * Download the script.
 * Edit the three configuration variables at the beginning of the script:
+
         $dsname = 'mongodb://localhost/wp20130708';
         $file = 'enwiki-20130708-pages-articles.xml.bz2';
         $log = './';
+
 * Run the script -- this may take several hours.
 
 License
