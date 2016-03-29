@@ -3,6 +3,9 @@ wikipedia.org-xmldump-mongodb
 
 Notice
 ------
+
+This code is **RETIRED**. Use https://github.com/kodekrash/wikipedia.org-xmldump-importer.
+
 This script is a bit outdated. There are a couple of changes to the Wikipedia dump file that don't parse correctly, and it needs to be rewritten to use the new PHP MongoDB driver.
 
 Overview
